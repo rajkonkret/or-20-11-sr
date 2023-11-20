@@ -82,4 +82,76 @@ print("Twoje imie {}".format(imie))  # Twoje imie Radek
 print("Sprawdzam zmienna temp i wiek {} {}".format(wiek, temp))  # Sprawdzam zmienna temp i wiek 47 36.6
 print(f"Sprawdzam zmienną temp {temp} i wiek {wiek}")  # Sprawdzam zmienną temp 36.6 i wiek 47
 # f-string - sformatowany string
-print("Zmienna flat {}".format(5.755555)) # Zmienna flat 5.755555
+print("Zmienna flat {}".format(5.755555))  # Zmienna flat 5.755555
+
+wersja = 3.9000001
+print(f"Używamy wersji pythona {wersja}")  # Używamy wersji pythona 3.9000001
+print(f"Używamy wersji pythona {wersja:.2f}")  # Używamy wersji pythona 3.90
+print(f"Używamy wersji pythona {wersja:.1f}")  # Używamy wersji pythona 3.9
+# dla 0f zaokrąglił przy wypisywaniu
+print(f"Używamy wersji pythona {wersja:.0f}")  # Używamy wersji pythona 4
+print(wersja)  # 3.9000001
+wersja2 = 3.999999
+print(f"Uzywamy wersji python {wersja2:.3f}")  # # Uzywamy wersji python 4.000
+wersja3 = 3.9994567
+print(f"Uzywamy wersji python {wersja3:.3f}")  # # Uzywamy wersji python 3.999
+wersja4 = 3.9995567
+print(f"Uzywamy wersji python {wersja4:.3f}")  # Uzywamy wersji python 4.000
+
+print(f"""
+tekst wielolinijkowy
+    zmienna {temp}
+zmienna {wiek}""")
+# "tekst wielolinijkowy
+#     zmienna 36.6
+# zmienna 47"
+print(f"\tZmienna {temp}\nzmienna {wiek}")
+# "	Zmienna 36.6
+# zmienna 47"
+# \t tabulator
+# \n nowa linia
+# \b - backspace
+print("Jak działą backspce\b")  # Jak działą backspc
+
+imie = "Radek Radek"
+print(type(imie))
+imie.lower()  # """ Return a copy of the string converted to lowercase. """
+# zwraca kopię ale nie zmienia orginału
+print(imie)
+# gdy chcemy wyswietlic zmienione musimy
+print(imie.lower())  # radek radek
+print(imie)  # Radek Radek
+# gdy potrzeebujemy w dalszej częsci zmienione to musimy zapamietac sobie
+imie2 = imie.lower()
+print(imie2)  # radek radek
+print(imie)  # Radek Radek
+# teksty w pythonie są niemutowalne
+# tekst to jest tak naprawdę ciąg znaków
+# kązda literka ma swój indeks(numer w ciągu)
+print(imie[0])  # R - dla indeksu 0 - numeracja indeksów od 0
+# imie[0] = "T"  # TypeError: 'str' object does not support item assignment
+print(id(imie))  # 2000569352752 - referencja, adres w pamieci
+# upper, cpitalize
+imie_x = "Radek"
+print(id(imie_x))
+imie_x = imie_x.lower()
+print(id(imie_x))
+# 2041495767984
+# 2041497701360
+print(imie_x.replace("k", ","))  # rade,
+print(imie_x.count("a"))  # 1
+print(imie.capitalize())  # Radek radek - pierwsza litera duża, pozostałe małe
+print(imie.title())  # Radek Radek - wszystkie wyrazy z duzej litery
+
+liczba = 456789123456
+print(liczba)  # 456789123456
+print(f"Nasza duża liczba {liczba}")  # Nasza duża liczba 456789123456
+print(f"Nasza duża liczba {liczba:,}")  # Nasza duża liczba 456,789,123,456
+# zamienic , na . i spacje
+print(f"Nasza duża liczba {liczba:,}".replace(",", " "))
+print(f"Nasza duża liczba {liczba:,}".replace(",", "."))
+# Nasza duża liczba 456 789 123 456
+# Nasza duża liczba 456.789.123.456
+liczba2 = 1111123.4565
+print(f"Nasza duża liczba {liczba2:,}")  # Nasza duża liczba 1,111,123.4565
+# 15:10
