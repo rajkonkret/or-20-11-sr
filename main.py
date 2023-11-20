@@ -16,3 +16,4 @@ if __name__ == '__main__':
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 # ctrl shift f10 - szybkie uruchomienie bieżącego pliku
 # dwa razy shift - podręczne menu wyszukiwania
+# 13:25
