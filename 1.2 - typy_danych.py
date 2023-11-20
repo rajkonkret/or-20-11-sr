@@ -49,7 +49,7 @@ print(1 / 1)  # 1.0
 # 0.023232822540781017
 print(wiek // rok)  # 0, czesc całkowita z dzielenia 47/2023 = 0 całych i 47 reszty
 print(wiek % rok)  # 47, modulo, reszta z dzielenia 47/2023 = 0 całych i 47 reszty
-
+print(wiek ** rok)  # potęgowanie
 print(54 - 5 * 43 + 4 / 2 + 4 / 2)  # -157.0
 print(54 - (5 * 43) + (4 / 2 + 4) / 2)  # -158.0
 print("Radek")
