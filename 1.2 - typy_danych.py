@@ -155,3 +155,45 @@ print(f"Nasza duża liczba {liczba:,}".replace(",", "."))
 liczba2 = 1111123.4565
 print(f"Nasza duża liczba {liczba2:,}")  # Nasza duża liczba 1,111,123.4565
 # 15:10
+
+# boolean - typ logiczny
+# True, False - z dużej litery, podobnie jak None
+czy_znasz_Python = True
+print(czy_znasz_Python)  # True
+print(int(czy_znasz_Python))  # 1
+print(int(False))  # 0
+# bool() - zamiana na bool
+print(bool(1))  # True
+print(bool(0))  # False
+print(bool(100))  # True
+print(bool(-1))  # True
+print(bool("Radek"))  # True
+x = "Radek"
+print(bool(x))  #
+x = ""
+print(bool(x))  # False
+print(bool(None))  # False
+# None - nic, odpowiednik nulla
+z = None
+print("z =", z)  # z = None
+print(type(z))  # <class 'NoneType'>
+# komentarz
+"""
+Komentarz wielolinijkowy
+"""
+tekst = "  Tekst   "
+print(tekst.strip())  # "Tekst"
+tekst_x = "Witaj świecie"
+encoded_s = tekst_x.encode('utf-8')
+print(encoded_s)  # b'Witaj \xc5\x9bwiecie'  b - zapis bytowy
+print(type(encoded_s))  # <class 'bytes'>
+# \x - dane w sytemie 16, \xc5  = 197
+print(encoded_s.decode('utf-8'))  # Witaj świecie
+tekst_kazik = "Zażółć gęślą jaźń"
+encoded_kazik_s = tekst_kazik.encode('utf-8')
+print(encoded_kazik_s)  # b'Za\xc5\xbc\xc3\xb3\xc5\x82\xc4\x87 g\xc4\x99\xc5\x9bl\xc4\x85 ja\xc5\xba\xc5\x84'
+print(encoded_kazik_s.decode('utf-8'))
+print(chr(65))  # A  - wyswietlenia z naku wg kodu ascii
+print(ord('A'))  # 65
+print("\u0105")  # ą
+print("\uc487")  # 쒇
