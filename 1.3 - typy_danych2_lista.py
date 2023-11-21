@@ -74,3 +74,43 @@ lista_lista = [1, 2, 3, [1, 2, 3]]
 print(lista_lista)
 print(type(lista_lista))  # <class 'list'>
 # numpy - dedykowana do operacji na macierzach
+
+print(liczby[0:3])
+liczby.append(17)
+liczby.remove(54)
+print(liczby.pop(2))  # 34
+liczby.insert(1, 56)
+print(liczby)  # [12.34, 56, 22, 876, 999, 17]
+
+print(lista_lista[3])  # [1, 2, 3]
+print(lista_lista[3][1])  # wyciąganie pozycji z zagnieżdżonej listy
+
+not_ = "Dopuszczalny sposób wykorzystania słowa zakazanego jako nazwa naszej zmiennej"
+print(len(liczby))  # 6
+
+lista3 = ['a', 'b', 'c']
+lista4 = ["1", "2", "3"]
+lista3.extend(lista4)
+print(lista3)  # ['a', 'b', 'c', '1', '2', '3']  # połaczenie list
+lista3.append(lista4)
+print(lista3)  # ['a', 'b', 'c', '1', '2', '3', ['1', '2', '3']]
+lista5 = "definicja"
+lista3.extend(lista5)
+print(lista3)
+# ['a', 'b', 'c', '1', '2', '3', ['1', '2', '3'], 'd', 'e', 'f', 'i', 'n', 'i', 'c', 'j', 'a']
+# rozpakowanie sekwencji
+tekst = 'Python'
+lista_z_teksty = list(tekst)
+print(lista_z_teksty)  # ['P', 'y', 't', 'h', 'o', 'n'] - odpowiednik extend()
+
+lista2 = [tekst]
+print(lista2)  # ['Python'] append()
+
+liczby2 = 1234
+liczby3 = []
+liczby3.extend(str(liczby2))
+print(liczby3)  # ['1', '2', '3', '4']
+
+krotka = tuple(liczby)
+print(krotka)  # (12.34, 56, 22, 876, 999, 17)
+print(type(krotka))  # <class 'tuple'>
