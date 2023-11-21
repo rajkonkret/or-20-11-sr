@@ -25,7 +25,7 @@ while True:
     #     break
     # if odp > "5":
     #     break
-    if odp not in ["1", "2", "3", "4"]:
+    if odp not in ["1", "2", "3", "4"]:  # lista zdeklarowana w miejsu uzycia
         break
 
     try:
