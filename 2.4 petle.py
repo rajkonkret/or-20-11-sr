@@ -41,3 +41,12 @@ if a > 0:
     print("A > 0")
 elif a > 10:
     print("A > 10")
+
+for c in lista2:
+    if c % 2 == 0:
+        print(c, "parzysta")
+        if c == 3:
+            print(c)
+
+lista4 = [j for j in range(6) if j % 2 == 0]
+print(lista4)  # [0, 2, 4]
