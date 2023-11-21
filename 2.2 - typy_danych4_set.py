@@ -44,3 +44,4 @@ print(f"Zbior zmodyfikowany: {zbior_zmod}")
 # update()) modyfikuje kolekcje
 zbior.update(zbior_liczb)  # zbior zostaje zmienione
 print(zbior)  # {66, 999, 11, 77, 44, 18, 55, 62}
+# 10: 40
