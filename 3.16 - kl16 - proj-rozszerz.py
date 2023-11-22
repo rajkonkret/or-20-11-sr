@@ -40,8 +40,6 @@ class User:
             print(f'Bład {e}')
 
 
-
-
 class Library:
     # lista ksiazek dostepnych
     # lista ksiazek wypożyczonych
@@ -138,4 +136,3 @@ u1.us_wypozycz_ksiazke(biblioteka, "1234567890")
 print(f"Wypożyczone ksiązki {biblioteka.wypozyczone_ksiazki_fun()}")  # Wypożyczone ksiązki {'1234567890': 'Adam Nowak'}
 
 print(u1.us_jakie_mam_ksiazki())  # [Autor: Jan Kowalski, Tytuł: programowanie w Pythonie, ISBN: 1234567890]
-
