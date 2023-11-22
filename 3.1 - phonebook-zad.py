@@ -54,4 +54,3 @@ while True:
         print("Wystąpił bład:", e)
     finally:  # zawsze
         print("Dziekuje za korzystanie z mojego programu")
-# 11:30
