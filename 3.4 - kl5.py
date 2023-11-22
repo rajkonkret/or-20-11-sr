@@ -77,3 +77,4 @@ print(c1.all_contacts)
 f1.order("herbata")  # herbata zamówiono od Jarek
 print(Friend.__mro__)
 # (<class '__main__.Friend'>, <class '__main__.Suplier'>, <class '__main__.Contact'>, <class 'object'>)
+# 10:55
