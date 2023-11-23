@@ -1,0 +1,4 @@
+(venv) PS C:\Users\CSComarch\PycharmProjects\or-20-11-sr> pip freeze > requirements.txt
+(venv) PS C:\Users\CSComarch\PycharmProjects\or-20-11-sr> pip install -r .\requirements.txt
+# pyinstaller
+(venv) PS C:\Users\CSComarch\PycharmProjects\or-20-11-sr> pip install pyinstaller
