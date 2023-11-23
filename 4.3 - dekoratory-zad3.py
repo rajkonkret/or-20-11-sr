@@ -31,6 +31,7 @@ def monte_carlo_pi(n):
 def my_function():
     time.sleep(1)
 
+
 @measure_time
 def pi_run():
     return monte_carlo_pi(30_000_000)
